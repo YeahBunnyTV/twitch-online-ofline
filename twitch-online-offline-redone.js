@@ -6,8 +6,8 @@
   // Allow customizing the script with various data-* attributes
   var attribute = $script.attr("data-attribute") || "data-twitch-channel",
       interval = parseInt($script.attr("data-interval")) || false,
-      onlineImage = $script.attr("data-online-image") || 'data:image/svg+xml,<?xml version="1.0"?><svg height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="8" fill="green"/></svg>',
-      offlineImage = $script.attr("data-offline-image") || 'data:image/svg+xml,<?xml version="1.0"?><svg height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="8" fill="gray"/></svg>',
+      onlineImage = $script.attr("data-online-image") || 'data:image/svg+xml,<?xml version="1.0"?><svg height="8px" viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="8" fill="green"/></svg>',
+      offlineImage = $script.attr("data-offline-image") || 'data:image/svg+xml,<?xml version="1.0"?><svg height="8px" viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="8" fill="gray"/></svg>',
       minInterval = 30; // seconds
 
   document.refreshTwitchChannelStatuses = function () {
